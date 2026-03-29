@@ -11,7 +11,7 @@ By engineering a custom 5-star sentiment scale and utilizing advanced M-code for
 Before the data could be "deployed" to the dashboard, it underwent a rigorous cleaning process to ensure maximum signal and minimum noise.
 
 * **Source Migration:** Transitioned the data source from a multi-layered Excel Workbook to a flat CSV file for faster performance and better scalability.
-* **Synthetic Data Generation:** To create a more robust 5-star distribution, the original **Response** column was updated using the `RANDBETWEEN(1,5)` function. This provided a realistic bell curve for sentiment analysis. Since this project is using sample data and is meant for learning purposes, this methodology is justififed.
+* **Synthetic Data Generation:** To create a more robust 5-star distribution, the original **Response** column was updated using the `RANDBETWEEN(1,5)` function. This provided a realistic bell curve for sentiment analysis. Since this project is using sample data and is meant for learning purposes, this methodology is justified.
 * **Column Pruning:** Deleted the redundant **Response Text** column to streamline the model and reduce "Chart Junk."
 * **Sentiment Categorization:** Used a **Conditional Column** in Power Query to translate raw scores into actionable tactical categories:
     * **Negative:** Scores 1–2 (Requires immediate reinforcement)
