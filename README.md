@@ -23,11 +23,13 @@ The "Engine Room" of this project involved custom M-code to handle complex organ
 
 * **Job Level Classification:** I wrote a custom `if...then...else` statement in the Power Query Advanced Editor. This code scanned four separate binary columns (Director, Manager, Supervisor, Staff) to create a single, unified **Job Level** column.
 * **Logic Snippet:**
-    ```powerquery
-    each if [Director] = 1 then "Director" 
+    ```Table.AddColumn(#"Added Response Category", "Job Level", each 
+    if [Director] = 1 then "Director" 
     else if [Manager] = 1 then "Manager" 
     else if [Supervisor] = 1 then "Supervisor" 
-    else "Staff"
+    else if [Staff] = 1 then "Staff" 
+    else "Other"
+    )
     ```
     *This allowed for a single "Slicer" to filter the entire dashboard by rank, providing streamlined tactical oversight.*
 
