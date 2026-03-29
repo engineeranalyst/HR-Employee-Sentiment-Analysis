@@ -22,7 +22,6 @@ Before the data could be "deployed" to the dashboard, it underwent a rigorous cl
 The "Engine Room" of this project involved custom M-code to handle complex organizational hierarchies that the standard UI couldn't process alone.
 
 * **Job Level Classification:** I wrote a custom `if...then...else` statement in the Power Query Advanced Editor. This code scanned four separate binary columns (Director, Manager, Supervisor, Staff) to create a single, unified **Job Level** column.
-* **M Code:**
     ```
     Table.AddColumn(#"Added Response Category", "Job Level", each 
        if [Director] = 1 then "Director" 
