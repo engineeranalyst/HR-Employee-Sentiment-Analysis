@@ -2,7 +2,7 @@
 
 ![HR Analytics Dashboard (My Version)](https://github.com/user-attachments/assets/c5c71c60-e6f7-4b59-b1a5-c80114cd4624)
 
-## 📋 I. Project Overview
+## 📋 I. Executive Summary
 This project transformed a raw, fragmented HR survey dataset into a high-performance, interactive **Diagnostic Dashboard**. The goal was to move beyond simple "Ad Hoc" data requests and provide HR leadership with a persistent "Tactical HUD" to monitor organizational health.
 
 By engineering a custom 5-star sentiment scale and utilizing advanced M-code for job-level classification, this dashboard identifies specific "Conflict Zones" (low-performing departments or questions) and allows for precision decision-making. The final result is a corporate-grade reporting tool that balances descriptive statistics (What is happening?) with diagnostic insights (Why is it happening?).
