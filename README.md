@@ -2,14 +2,14 @@
 
 ![HR Analytics Dashboard (My Version)](https://github.com/user-attachments/assets/c5c71c60-e6f7-4b59-b1a5-c80114cd4624)
 
-## 📋 I. Executive Summary
+## 📋 Executive Summary
 This project transformed a raw, fragmented HR survey dataset into a high-performance, interactive **Diagnostic Dashboard**. The goal was to move beyond simple "Ad Hoc" data requests and provide HR leadership with a persistent "Tactical HUD" to monitor organizational health.
 
 By engineering a custom 5-star sentiment scale and utilizing advanced M-code for job-level classification, this dashboard identifies specific "Conflict Zones" (low-performing departments or questions) and allows for precision decision-making. The final result is a corporate-grade reporting tool that balances descriptive statistics (What is happening?) with diagnostic insights (Why is it happening?).
 
 ---
 
-## 🛠️ II. Data Cleaning & Engineering Strategy
+## 🛠️ Data Cleaning & Engineering Strategy
 Before the data could be "deployed" to the dashboard, it underwent a rigorous cleaning process to ensure maximum signal and minimum noise.
 
 * **Source Migration:** Transitioned the data source from a multi-layered Excel Workbook to a flat CSV file for faster performance and better scalability.
@@ -22,7 +22,7 @@ Before the data could be "deployed" to the dashboard, it underwent a rigorous cl
 
 ---
 
-## 💻 III. Power Query & M-Code Deep Dive
+## 💻 Power Query & M-Code Deep Dive
 The "Engine Room" of this project involved custom M-code to handle complex organizational hierarchies that the standard UI couldn't process alone.
 
 * **Job Level Classification:** I wrote a custom `if...then...else` statement in the Power Query Advanced Editor. This code scanned four separate binary columns (Director, Manager, Supervisor, Staff) to create a single, unified **Job Level** column.
@@ -39,7 +39,7 @@ The "Engine Room" of this project involved custom M-code to handle complex organ
 
 ---
 
-## 📈 IV. Data Modeling & DAX Measures
+## 📈 Data Modeling & DAX Measures
 I developed a library of custom DAX measures to serve as the dashboard's "Vital Signs."
 
 * **Total Responses:** Uses the `COUNTROWS` function to calculate the headcount.
@@ -64,7 +64,7 @@ I developed a library of custom DAX measures to serve as the dashboard's "Vital 
    ```
 ---
 
-## 🎨 V. Report Design & UI/UX (The Visual HUD)
+## 🎨 Report Design & UI/UX (The Visual HUD)
 The dashboard was designed with a "KPI-First" hierarchy, inspired by professional grid systems and clean aesthetics.
 
 * **Top-Level KPIs:** Placed critical numbers (Total Responses, Average Rating, and Completion Percentage) at the very top for immediate "Battlefield Recon."
