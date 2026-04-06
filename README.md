@@ -5,7 +5,9 @@
 ## 📋 Executive Summary
 I performed a comprehensive sentiment analysis of a dataset containing HR data.
 
-Fot this project, transformed a raw, fragmented HR survey dataset into a high-performance, interactive **Diagnostic Dashboard**. The goal was to move beyond simple "Ad Hoc" data requests and provide HR leadership with a persistent "Tactical HUD" to monitor organizational health.
+Fot this project, transformed a raw, fragmented HR survey dataset into a high-performance, interactive **Diagnostic Dashboard**. 
+
+The goal was to move beyond simple "Ad Hoc" data requests and provide HR leadership with a persistent "Tactical HUD" to monitor organizational health.
 
 By engineering a custom 5-star sentiment scale and utilizing advanced M-code for job-level classification, this dashboard identifies specific "Conflict Zones" (low-performing departments or questions) and allows for precision decision-making. The final result is a corporate-grade reporting tool that balances descriptive statistics (What is happening?) with diagnostic insights (Why is it happening?).
 
