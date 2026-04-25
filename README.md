@@ -68,7 +68,7 @@ The dashboard was designed with a "KPI-First" hierarchy, inspired by professiona
 * **Question-Level Intelligence:** A specialized bar chart to pinpoint exactly which survey questions are driving low morale.
 * **Slicer Sidebar:** All filters were moved to the left side to follow natural eye-movement patterns, ensuring the user can quickly toggle between different job levels and departments.
 
-## 📊 Key Insights & Findings
+## 📊 Key Insights
 *The analysis reveals clear patterns in how organizational culture is perceived across different functional areas:*
 
 * **Sentiment Polarization:** While the overall organizational average is strong, sentiment is highly polarized. A significant portion of the workforce falls into the "Neutral" (3) bucket, indicating a "wait-and-see" approach to engagement.
