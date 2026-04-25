@@ -11,8 +11,6 @@ The goal was to move beyond simple "Ad Hoc" data requests and provide HR leaders
 
 By engineering a custom 5-star sentiment scale and utilizing advanced M-code for job-level classification, this dashboard identifies specific "Conflict Zones" (low-performing departments or questions) and allows for precision decision-making. The final result is a corporate-grade reporting tool that balances descriptive statistics (What is happening?) with diagnostic insights (Why is it happening?).
 
----
-
 ## 🛠️ Data Cleaning & Engineering Strategy
 Before the data could be "deployed" to the dashboard, it underwent a rigorous cleaning process to ensure maximum signal and minimum noise.
 
@@ -23,8 +21,6 @@ Before the data could be "deployed" to the dashboard, it underwent a rigorous cl
     * **Negative:** Scores 1–2 (Requires immediate reinforcement)
     * **Neutral:** Score 3 (The stalemate/middle ground)
     * **Positive:** Scores 4–5 (High-morale zones)
-
----
 
 ## 💻 Power Query & M-Code Deep Dive
 The "Engine Room" of this project involved custom M-code to handle complex organizational hierarchies that the standard UI couldn't process alone.
@@ -40,8 +36,6 @@ The "Engine Room" of this project involved custom M-code to handle complex organ
     )
     ```
     *This allowed for a single "Slicer" to filter the entire dashboard by rank, providing streamlined tactical oversight.*
-
----
 
 ## 📈 Data Modeling & DAX Measures
 I developed a library of custom DAX measures to serve as the dashboard's "Vital Signs."
@@ -66,8 +60,6 @@ I developed a library of custom DAX measures to serve as the dashboard's "Vital 
               [Total Responses],
               0)
    ```
----
-
 ## 🎨 Report Design & UI/UX
 The dashboard was designed with a "KPI-First" hierarchy, inspired by professional grid systems and clean aesthetics.
 
@@ -75,8 +67,6 @@ The dashboard was designed with a "KPI-First" hierarchy, inspired by professiona
 * **Departmental Sentiment:** Used a **Stacked Bar Chart** to show the 3-way split of Positive/Neutral/Negative across departments.
 * **Question-Level Intelligence:** A specialized bar chart to pinpoint exactly which survey questions are driving low morale.
 * **Slicer Sidebar:** All filters were moved to the left side to follow natural eye-movement patterns, ensuring the user can quickly toggle between different job levels and departments.
-
----
 
 ## 📊 Key Insights & Findings
 *The analysis reveals clear patterns in how organizational culture is perceived across different functional areas:*
@@ -86,9 +76,7 @@ The dashboard was designed with a "KPI-First" hierarchy, inspired by professiona
 * **Departmental Variance:** Sentiment is not uniform. Certain departments report lower-than-average sentiment scores, suggesting localized management challenges or resource constraints compared to the higher-performing divisions.
 * **High Completion Integrity:** With a **99% completion rate**, the survey data provides a highly reliable and representative baseline for organizational strategy, minimizing the risk of "selection bias" in our findings.
 
----
-
-## 💡 Data-Driven Recommendations
+## 💡 Recommendations
 *Based on the diagnostic patterns identified, I recommend the following tactical interventions to improve employee sentiment:*
 
 1. **Targeted Management Coaching:** Since sentiment variance is linked to specific departments, I recommend deploying specialized engagement workshops for managers in lower-performing areas. Focus these sessions on aligning team objectives with individual contributions.
