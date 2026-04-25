@@ -53,7 +53,7 @@ I developed a library of custom DAX measures to serve as the dashboard's "Vital 
    ```
    Completion Percentage = 
    VAR CompletedSurveys = CALCULATE(
-                              COUNTROWS('HR Survey Reponses'),
+                              [Total Responses],
                               'HR Survey Reponses'[Status]="Complete")
    RETURN DIVIDE(
               CompletedSurveys,
